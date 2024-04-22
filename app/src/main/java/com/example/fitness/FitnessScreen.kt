@@ -1,6 +1,9 @@
 package com.example.fitness
 
 import androidx.compose.animation.ExperimentalAnimationApi
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.spring
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -72,8 +75,14 @@ fun FitnessList(
                 onToggleDescription(isExpanded) }
         ) {
             Column(
-                modifier = Modifier.padding(16.dp)
-            ) {
+                modifier = Modifier
+                    .animateContentSize(
+                        animationSpec = spring(
+                            dampingRatio = Spring.DampingRatioNoBouncy,
+                            stiffness = Spring.StiffnessMedium
+                        )
+            )
+            ){
                 //Day .. text
                 Text(
                     text = stringResource(fitness.dayRes),
