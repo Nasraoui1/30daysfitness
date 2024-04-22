@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fitness</string>
+    <string name="day1">Day 1</string>
+    <string name="description1">Experience the transformative power of yoga as you flow through poses, fostering both physical vitality and mental clarity.</string>
+    <string name="title1">Try yoga</string>
+    <string name="day2">Day 2</string>
+    <string name="description2">Boost your energy with a quick cardio circuit challenge. Elevate your heart rate with dynamic exercises for a burst of vitality and mood enhancement.</string>
+    <string name="title2">Quick Cardio Circuit</string>
+    <string name="day3">Day 3</string>
+    <string name="description3">Ascend to new heights with sport climbing. Conquer challenging routes, build strength, and embrace the thrill of vertical exploration.</string>
+    <string name="title3">Try Sport Climbing</string>
+</resources>
