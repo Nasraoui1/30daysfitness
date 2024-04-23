@@ -81,18 +81,21 @@ fun FitnessList(
                             dampingRatio = Spring.DampingRatioNoBouncy,
                             stiffness = Spring.StiffnessMedium
                         )
-            )
-            ){
+                    )
+                )
+            {
                 //Day .. text
                 Text(
                     text = stringResource(fitness.dayRes),
-                    style = MaterialTheme.typography.displaySmall
+                    style = MaterialTheme.typography.displaySmall,
+                    modifier = Modifier.padding(start = 16.dp, top = 8.dp)
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 //sport text
                 Text(
                     text = stringResource(fitness.titleRes),
-                    style = MaterialTheme.typography.displayMedium.copy(fontWeight = FontWeight.Bold)
+                    style = MaterialTheme.typography.displayMedium.copy(fontWeight = FontWeight.Bold),
+                    modifier = Modifier.padding(start = 16.dp)
                 )
                 Spacer(modifier = Modifier.height(8.dp))
                 //fitness image
@@ -111,7 +114,8 @@ fun FitnessList(
                     //description text
                     Text(
                         text = stringResource(fitness.descriptionRes),
-                        style = MaterialTheme.typography.displayMedium
+                        style = MaterialTheme.typography.displayMedium,
+                        modifier = Modifier.padding(all = 16.dp)
                     )
                 }
             }
